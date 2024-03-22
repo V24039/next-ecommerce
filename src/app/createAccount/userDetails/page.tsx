@@ -1,7 +1,8 @@
 "use client";
 
 import { Form, Formik } from "formik";
-import { FormInput } from "../_components/formInput";
+import { FormInput } from "../../_components/formInput";
+import Button from "~/app/_components/button";
 
 export default function CreateAccount() {
   return (
@@ -30,9 +31,7 @@ export default function CreateAccount() {
               type="password"
               placeholder="Enter"
             />
-            <button type="submit" className="bg-black text-white p-3 rounded-md font-light">
-              Create Account
-            </button>
+            <Button label="Create Account"/>
           </Form>
         </Formik>
         <p className="text-xs pt-4 pb-12">Have an Account? <b>LOGIN</b></p>
