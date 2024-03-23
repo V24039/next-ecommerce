@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 type IButtonProps = {
@@ -10,7 +12,7 @@ export const Button = ({label}:IButtonProps) => {
       type="submit"
       className="rounded-md bg-black p-3 font-light text-white"
     >
-      VERIFY
+      {label}
     </button>
   );
 };

@@ -3,13 +3,14 @@
 import { Form, Formik } from "formik";
 import React from "react";
 import Button from "~/app/_components/button";
+import { boxBody, headingStyle, subHeading } from "~/app/const";
 
-export const page = () => {
+export const Verification = () => {
   return (
     <div className="my-10 flex flex-wrap content-center justify-center">
-      <div className="flex w-2/3 flex-col flex-wrap content-center justify-center gap-4 rounded-2xl border-[1px] border-gray-300 px-10 py-8 text-center">
-        <span className="text-2xl font-bold">Verify your email</span>
-        <p className="text-pretty">
+      <div className={boxBody}>
+        <span className={headingStyle}>Verify your email</span>
+        <p className={subHeading}>
           Enter the 8 digit code you have recevied on anu***gmail.com
         </p>
         <Formik initialValues={{ userName: "" }} onSubmit={() => console.log()}>
@@ -37,4 +38,4 @@ export const page = () => {
   );
 };
 
-export default page;
+export default Verification;
