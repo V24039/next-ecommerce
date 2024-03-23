@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
-"use client"
+"use client";
 
 import { useField } from "formik";
 import { useState } from "react";
@@ -27,17 +27,17 @@ export const PasswordInput = ({ label, ...props }: IPasswordInputProps) => {
           {...field}
           {...props}
           type={showPassword ? "text" : "password"}
-          className={` ${meta.touched && meta.error ? "ring-red-600" : ""} h-12 w-96 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6`}
+          className={` ${meta.touched && meta.error ? "ring-red-600" : ""} h-12 w-96 rounded-md border-0 px-1 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:p-2 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6`}
         />
         <span
-          className="absolute right-1 p-1 pt-3 cursor-pointer underline"
+          className="absolute right-1 cursor-pointer p-1 pt-3 underline"
           onClick={() => setShowPassword((prev) => !prev)}
         >
           Show
         </span>
       </div>
       {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
+        <div className="text-left text-sm text-red-600">{meta.error}</div>
       ) : null}
     </div>
   );

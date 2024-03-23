@@ -6,18 +6,42 @@ import Button from "~/app/_components/button";
 import { FormInput } from "../_components/formInput";
 import Link from "next/link";
 import { PasswordInput } from "../_components/passwordInput";
-import { boxBody, headingStyle, subHeading } from "../const";
+import * as Yup from "yup";
+
+const loginInitialValue: ILoginValues = {
+  email: "",
+  password: "",
+};
+
+type ILoginValues = {
+  email: string;
+  password: string;
+};
 
 export const Login = () => {
+  const loginValidationSchema = Yup.object().shape({
+    email: Yup.string()
+      .email("Please enter a valid email address")
+      .required("Please enter your email address"),
+    password: Yup.string().required("Provide a pasword"),
+  });
+
   return (
     <div className="my-10 flex flex-wrap content-center justify-center">
-      <div className={boxBody}>
-        <span className={headingStyle}>Login</span>
+      <div className="flex w-[567px] flex-col flex-wrap content-center justify-center gap-4 rounded-2xl border-[1px] border-gray-300 px-10 py-8 text-center">
+        <span className="text-3xl font-semibold">Login</span>
         <div>
-          <p className="font-medium text-2xl text-pretty">Welcome back to ECOMMERCE</p>
-          <p className={subHeading}>The next gen business marketplace</p>
+          <p className="text-pretty text-2xl font-medium">
+            Welcome back to ECOMMERCE
+          </p>
+          <p className="font-normal text-base text-pretty">The next gen business marketplace</p>
         </div>
-        <Formik initialValues={{ userName: "" }} onSubmit={() => console.log()}>
+        <Formik
+          initialValues={loginInitialValue}
+          validationSchema={loginValidationSchema}
+          validateOnBlur={false}
+          onSubmit={(values) => console.log(values)}
+        >
           <Form className="flex flex-col gap-6">
             <FormInput
               label="Email"
@@ -31,9 +55,9 @@ export const Login = () => {
               type="text"
               placeholder="Enter"
             />
+            <Button label="LOGIN" />
           </Form>
         </Formik>
-        <Button label="LOGIN" />
         <hr />
         <p>
           Don&apos;t have an Account?{" "}
