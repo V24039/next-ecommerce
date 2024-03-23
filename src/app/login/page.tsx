@@ -1,30 +1,45 @@
 "use client";
 
 import { Form, Formik } from "formik";
-import React from "react";
+import React, { useContext } from "react";
 import Button from "~/app/_components/button";
 import { FormInput } from "../_components/formInput";
 import Link from "next/link";
 import { PasswordInput } from "../_components/passwordInput";
 import * as Yup from "yup";
+import { type ILogggedUserValues, type ILoginValues } from "../types";
+import { AuthContext } from "../auth-provider";
+import { useRouter } from "next/navigation";
 
 const loginInitialValue: ILoginValues = {
   email: "",
   password: "",
 };
 
-type ILoginValues = {
-  email: string;
-  password: string;
-};
-
 export const Login = () => {
+  const router = useRouter();
+  const { setAuthValue } = useContext(AuthContext);
+
   const loginValidationSchema = Yup.object().shape({
     email: Yup.string()
       .email("Please enter a valid email address")
       .required("Please enter your email address"),
     password: Yup.string().required("Provide a pasword"),
   });
+
+  const handelLogin = async (value: ILoginValues) => {
+    const response = await fetch("/data/userDetails.json");
+    const userDetails = (await response.json()) as ILogggedUserValues[];
+    const userExists = userDetails.some(
+      (user) => user.email === value.email && user.password === value.password,
+    );
+    if (userExists) {
+      setAuthValue(true);
+      router.push("/category")
+    } else {
+      console.log("user not present");
+    }
+  };
 
   return (
     <div className="my-10 flex flex-wrap content-center justify-center">
@@ -34,13 +49,15 @@ export const Login = () => {
           <p className="text-pretty text-2xl font-medium">
             Welcome back to ECOMMERCE
           </p>
-          <p className="font-normal text-base text-pretty">The next gen business marketplace</p>
+          <p className="text-pretty text-base font-normal">
+            The next gen business marketplace
+          </p>
         </div>
         <Formik
           initialValues={loginInitialValue}
           validationSchema={loginValidationSchema}
           validateOnBlur={false}
-          onSubmit={(values) => console.log(values)}
+          onSubmit={handelLogin}
         >
           <Form className="flex flex-col gap-6">
             <FormInput

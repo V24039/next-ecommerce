@@ -6,7 +6,7 @@ import Button from "~/app/_components/button";
 import Link from "next/link";
 import * as Yup from "yup";
 
-const UserInitialValues:IUserVaues = {
+const UserInitialValues: IUserVaues = {
   name: "",
   email: "",
   password: "",

@@ -1,0 +1,402 @@
+[
+  {
+    "id": 0,
+    "catogery": "Electronics"
+  },
+  {
+    "id": 1,
+    "catogery": "Clothing"
+  },
+  {
+    "id": 2,
+    "catogery": "Footwear"
+  },
+  {
+    "id": 3,
+    "catogery": "Home Appliances"
+  },
+  {
+    "id": 4,
+    "catogery": "Books"
+  },
+  {
+    "id": 5,
+    "catogery": "Beauty"
+  },
+  {
+    "id": 6,
+    "catogery": "Toys"
+  },
+  {
+    "id": 7,
+    "catogery": "Sports"
+  },
+  {
+    "id": 8,
+    "catogery": "Jewelry"
+  },
+  {
+    "id": 9,
+    "catogery": "Furniture"
+  },
+  {
+    "id": 10,
+    "catogery": "Health"
+  },
+  {
+    "id": 11,
+    "catogery": "Automotive"
+  },
+  {
+    "id": 12,
+    "catogery": "Groceries"
+  },
+  {
+    "id": 13,
+    "catogery": "Pet Supplies"
+  },
+  {
+    "id": 14,
+    "catogery": "Office Supplies"
+  },
+  {
+    "id": 15,
+    "catogery": "Outdoor"
+  },
+  {
+    "id": 16,
+    "catogery": "Music"
+  },
+  {
+    "id": 17,
+    "catogery": "Movies"
+  },
+  {
+    "id": 18,
+    "catogery": "Video Games"
+  },
+  {
+    "id": 19,
+    "catogery": "Tools"
+  },
+  {
+    "id": 20,
+    "catogery": "Kitchen Appliances"
+  },
+  {
+    "id": 21,
+    "catogery": "Fashion Accessories"
+  },
+  {
+    "id": 22,
+    "catogery": "Fitness Equipment"
+  },
+  {
+    "id": 23,
+    "catogery": "Craft Supplies"
+  },
+  {
+    "id": 24,
+    "catogery": "Baby Products"
+  },
+  {
+    "id": 25,
+    "catogery": "Home Decor"
+  },
+  {
+    "id": 26,
+    "catogery": "Garden Tools"
+  },
+  {
+    "id": 27,
+    "catogery": "Watches"
+  },
+  {
+    "id": 28,
+    "catogery": "Stationery"
+  },
+  {
+    "id": 29,
+    "catogery": "Pet Accessories"
+  },
+  {
+    "id": 30,
+    "catogery": "Musical Instruments"
+  },
+  {
+    "id": 31,
+    "catogery": "Board Games"
+  },
+  {
+    "id": 32,
+    "catogery": "Camping Gear"
+  },
+  {
+    "id": 33,
+    "catogery": "Art Supplies"
+  },
+  {
+    "id": 34,
+    "catogery": "Collectibles"
+  },
+  {
+    "id": 35,
+    "catogery": "Party Supplies"
+  },
+  {
+    "id": 36,
+    "catogery": "Travel Essentials"
+  },
+  {
+    "id": 37,
+    "catogery": "Smart Home Devices"
+  },
+  {
+    "id": 38,
+    "catogery": "Cookware"
+  },
+  {
+    "id": 39,
+    "catogery": "Computer Accessories"
+  },
+  {
+    "id": 40,
+    "catogery": "Fitness Trackers"
+  },
+  {
+    "id": 41,
+    "catogery": "Outdoor Gear"
+  },
+  {
+    "id": 42,
+    "catogery": "Vintage Clothing"
+  },
+  {
+    "id": 43,
+    "catogery": "Handmade Crafts"
+  },
+  {
+    "id": 44,
+    "catogery": "Beauty Tools"
+  },
+  {
+    "id": 45,
+    "catogery": "Phone Accessories"
+  },
+  {
+    "id": 46,
+    "catogery": "Office Furniture"
+  },
+  {
+    "id": 47,
+    "catogery": "Hiking Boots"
+  },
+  {
+    "id": 48,
+    "catogery": "Sunglasses"
+  },
+  {
+    "id": 49,
+    "catogery": "Pet Food"
+  },
+  {
+    "id": 50,
+    "catogery": "Photography Equipment"
+  },
+  {
+    "id": 51,
+    "catogery": "Antiques"
+  },
+  {
+    "id": 52,
+    "catogery": "Yoga Gear"
+  },
+  {
+    "id": 53,
+    "catogery": "Board Books"
+  },
+  {
+    "id": 54,
+    "catogery": "Car Parts"
+  },
+  {
+    "id": 55,
+    "catogery": "Tea and Coffee"
+  },
+  {
+    "id": 56,
+    "catogery": "Wall Art"
+  },
+  {
+    "id": 57,
+    "catogery": "Board Shorts"
+  },
+  {
+    "id": 58,
+    "catogery": "Baking Supplies"
+  },
+  {
+    "id": 59,
+    "catogery": "Fitness Apparel"
+  },
+  {
+    "id": 60,
+    "catogery": "Collectible Coins"
+  },
+  {
+    "id": 61,
+    "catogery": "Gardening Supplies"
+  },
+  {
+    "id": 62,
+    "catogery": "Vintage Vinyl Records"
+  },
+  {
+    "id": 63,
+    "catogery": "Candles"
+  },
+  {
+    "id": 64,
+    "catogery": "Cycling Accessories"
+  },
+  {
+    "id": 65,
+    "catogery": "Handbags"
+  },
+  {
+    "id": 66,
+    "catogery": "Cookbooks"
+  },
+  {
+    "id": 67,
+    "catogery": "Camping Cookware"
+  },
+  {
+    "id": 68,
+    "catogery": "Puzzles"
+  },
+  {
+    "id": 69,
+    "catogery": "Desk Lamps"
+  },
+  {
+    "id": 70,
+    "catogery": "Gym Bags"
+  },
+  {
+    "id": 71,
+    "catogery": "Luggage & Travel Bags"
+  },
+  {
+    "id": 72,
+    "catogery": "Hair Care & Styling Products"
+  },
+  {
+    "id": 73,
+    "catogery": "Instruments & Sheet Music"
+  },
+  {
+    "id": 74,
+    "catogery": "Party Decorations & Balloons"
+  },
+  {
+    "id": 75,
+    "catogery": "Wedding Supplies"
+  },
+  {
+    "id": 76,
+    "catogery": "Fragrances & Colognes"
+  },
+  {
+    "id": 77,
+    "catogery": "Mattresses & Bedding"
+  },
+  {
+    "id": 78,
+    "catogery": "Sewing & Knitting Supplies"
+  },
+  {
+    "id": 79,
+    "catogery": "Party Favors & Piñatas"
+  },
+  {
+    "id": 80,
+    "catogery": "Maternity & Baby Clothes"
+  },
+  {
+    "id": 81,
+    "catogery": "Cleaning Supplies & Laundry Care"
+  },
+  {
+    "id": 82,
+    "catogery": "Art & Craft Kits"
+  },
+  {
+    "id": 83,
+    "catogery": "Musical Audio Equipment"
+  },
+  {
+    "id": 84,
+    "catogery": "Party Invitations & Stationery"
+  },
+  {
+    "id": 85,
+    "catogery": "Luggage Accessories & Travel Gear"
+  },
+  {
+    "id": 86,
+    "catogery": "Men's Grooming Products"
+  },
+  {
+    "id": 87,
+    "catogery": "Science Kits & Educational Toys"
+  },
+  {
+    "id": 88,
+    "catogery": "Construction & Building Supplies"
+  },
+  {
+    "id": 89,
+    "catogery": "Musical Recording Equipment"
+  },
+  {
+    "id": 90,
+    "catogery": "Party Games & Activities"
+  },
+  {
+    "id": 91,
+    "catogery": "Gift Baskets & Hampers"
+  },
+  {
+    "id": 92,
+    "catogery": "Men's Accessories (Ties, Cufflinks)"
+  },
+  {
+    "id": 93,
+    "catogery": "Learning & Educational Toys"
+  },
+  {
+    "id": 94,
+    "catogery": "Safety & Security Products"
+  },
+  {
+    "id": 95,
+    "catogery": "DJ Equipment & Audio Production"
+  },
+  {
+    "id": 96,
+    "catogery": "Party Planning Services"
+  },
+  {
+    "id": 97,
+    "catogery": "Gift Wrapping Supplies & Ribbons"
+  },
+  {
+    "id": 98,
+    "catogery": "Men's Underwear & Socks"
+  },
+  {
+    "id": 99,
+    "catogery": "STEM Learning & Robotics Toys"
+  }
+]
